@@ -23,7 +23,7 @@ volumes:
     size: 10Gi
 
 properties:
-    DATABASE_HOST: postgres-master-12-2
+    DATABASE_HOST: postgres-ha-13-x-1.postgres-ha-13-x
     DATABASE_USER: postgres
     DATABASE_PORT: 5432
     DATABASE_NAME: springbootweb
