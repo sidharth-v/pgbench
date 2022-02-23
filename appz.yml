@@ -18,6 +18,7 @@ deploy:
     - 80
 volumes:
   - claim: pgbench-data
+    class: microk8s-hostpath
     mount: /appz/log/results
     name: data
     size: 10Gi
