@@ -24,7 +24,7 @@ volumes:
     size: 10Gi
 
 properties:
-    DATABASE_HOST: postgres13-master-13-y
+    DATABASE_HOST: postgres13-master-13-x
     DATABASE_USER: springbootweb
     DATABASE_PORT: 5432
     DATABASE_NAME: springbootweb
@@ -32,9 +32,9 @@ properties:
        vault: POSTGRESQL_SPRINGBOOT_PASSWORD
     PGBENCH_SCALE: 5
     PGBENCH_CLIENTS: 5
-    PGBENCH_RATE: 10
+    PGBENCH_RATE: 1000
     PGBENCH_THREADS: 2
-    PGBENCH_DURATION: 10
+    PGBENCH_DURATION: 60
     PGBENCH_SCRIPT: tpcb-like
     TEST_NAME: pgbench-test
     revision: 26
